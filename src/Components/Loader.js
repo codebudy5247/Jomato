@@ -6,14 +6,15 @@ import img3 from "../images/preload-3.png";
 const Loader = () => {
     return (
         <>
-        <div id="preloader">
-        <div class="caviar-load"></div>
-        <div class="preload-icons">
-          <img className="preload-1" src={img1} alt="img" />
-          <img className="preload-2" src={img2} alt="img" />
-          <img className="preload-3" src={img3} alt="imgs" />
-        </div>
-      </div>  
+        <main>
+	<div class="preloader">
+		<div class="preloader__square"></div>
+		<div class="preloader__square"></div>
+		<div class="preloader__square"></div>
+		<div class="preloader__square"></div>
+	</div>
+	<div class="status">Loading<span class="status__dot">.</span><span class="status__dot">.</span><span class="status__dot">.</span></div>
+</main>
         </>
     )
 }
